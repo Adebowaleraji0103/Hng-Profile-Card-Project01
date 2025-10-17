@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Inter", Arial, sans-serif; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: #1e1e2f;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+article {
+  background-color: #020817;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+header h1 {
+  margin: 2rem 0 1rem 0;
+  font-size: 1.8rem;
+  color: #3b82f6;
+}
+
+.avatar-wrapper {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+}
+
+.avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+figure h1 {
+  color: #3b82f6;
+  font-size: 1.5rem;
+}
+
+figure p {
+  color: #d1d5db;
+  font-size: 0.95rem;
+}
+
+figure .time {
+  color: #a4aab3;
+  font-size: 0.95rem;         
+  margin-top: -0.3rem;        
+  text-align: center;         
+  display: flex;              
+  justify-content: center;
+  gap: 5px;                   
+}
+
+figure .time span {
+  font-weight: 500;           
+  color: #d1d5db;             
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+
+nav a svg {
+  transition: transform 0.3s, color 0.3s;
+  color: #d1d5db;
+}
+
+nav a:hover svg {
+  transform: scale(1.2);
+  color: #3b82f6;
+}
+.connect{
+  color: #3b82f6;
+}
+
+section {
+  background-color: #0a1222;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+section h1 {
+  color: #3b82f6;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.hobbies ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.8rem;
+}
+
+.hobbies li {
+  color: #d1d5db;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.hobbies li:hover {
+  color: #3b82f6;
+}
+
+@media (min-width: 768px) {
+  section {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  section h1 {
+    text-align: left;
+  }
+
+   figure {
+    font-size: 1.2rem;   
+  }
+
+  figure h2 {
+    font-size: 2rem;     
+  }
+
+  figure p,
+  figure .time {
+    font-size: 1.1rem;   
+  }
+}
