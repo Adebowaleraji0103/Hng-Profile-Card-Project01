@@ -133,9 +133,7 @@ section h1 {
   transition: color 0.3s;
 }
 
-.hobbies li:hover {
-  color: #3b82f6;
-}
+
 
 @media (min-width: 768px) {
   section {
