@@ -147,6 +147,7 @@ section h1 {
   }
 
    figure {
+    display: flex;
     font-size: 1.2rem;   
   }
 
