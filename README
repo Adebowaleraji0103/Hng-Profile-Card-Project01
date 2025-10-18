@@ -1,0 +1,11 @@
+HNG Profile Card Project
+This is a simple and responsive profile card project created for the Hng Internship...... The Live Demo LInk =[https://hng-profile-card01.netlify.app/]
+
+Tools or technology used in crafting this work are,
+- HTML5
+- CSS3
+- JavaScript
+
+ How to Run Locally
+The first thing you need to do is to clone it, copy the github link and go to your terminal then type
+   git clone https://github.com/Adebowaleraji0103/Hng-Profile-Card-Project01.git
