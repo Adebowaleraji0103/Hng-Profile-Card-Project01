@@ -249,7 +249,6 @@ section h1 {
   }
 
   .contact-page .fullname-email {
-    /* display: flex; */
     flex-direction: row;
     gap: 1rem;
   }
