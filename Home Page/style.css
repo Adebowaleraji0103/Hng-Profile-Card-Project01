@@ -32,11 +32,11 @@ header ul {
   gap: 2rem;
   margin: 2rem 0 1rem;
   font-size: 1rem;
-  color: white;
+  color:#d1d5db;
   font-weight: bold;
   list-style-type: none;
 }
-header ul:hover {
+header ul li:hover {
   color: #3b82f6;
 }
 .avatar-wrapper {
