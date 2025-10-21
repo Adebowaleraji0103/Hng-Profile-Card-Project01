@@ -145,7 +145,7 @@ section h1 {
 .card {
   background: #0f172a;
   color: white;
-  max-width: 600px;
+  width: 600px;
   margin: 2rem auto;
   padding: 2rem;
   border-radius: 1rem;
@@ -249,7 +249,9 @@ section h1 {
   }
 
   .contact-page .fullname-email {
-    display: flex;
+    /* display: flex; */
+    flex-direction: row;
     gap: 1rem;
   }
+
 }
