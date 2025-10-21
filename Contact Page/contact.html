@@ -17,44 +17,45 @@
       </header>
       <h1>Contact Me</h1>
       <form id="contactForm" novalidate>
-        <div>
-          <label for="name">Full Name</label>
-          <input
-            type="text"
-            id="name"
-            data-testid="test-contact-name"
-            required
-            aria-describedby="error-name"
-          />
-          <p
-            id="error-name"
-            data-testid="test-contact-error-name"
-            class="error-message"
-            hidden
-          >
-            Full name is required.
-          </p>
-        </div>
+        <div class="fullname-email">
+          <div>
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              data-testid="test-contact-name"
+              required
+              aria-describedby="error-name"
+            />
+            <p
+              id="error-name"
+              data-testid="test-contact-error-name"
+              class="error-message"
+              hidden
+            >
+              Full name is required.
+            </p>
+          </div>
 
-        <div>
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            data-testid="test-contact-email"
-            required
-            aria-describedby="error-email"
-          />
-          <p
-            id="error-email"
-            data-testid="test-contact-error-email"
-            class="error-message"
-            hidden
-          >
-            Please enter a valid email address.
-          </p>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              data-testid="test-contact-email"
+              required
+              aria-describedby="error-email"
+            />
+            <p
+              id="error-email"
+              data-testid="test-contact-error-email"
+              class="error-message"
+              hidden
+            >
+              Please enter a valid email address.
+            </p>
+          </div>
         </div>
-
         <div>
           <label for="subject">Subject</label>
           <input
