@@ -1,11 +1,10 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  /* font-family: "Inter", Arial, sans-serif; */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background: #1e1e2f;
   color: white;
@@ -32,11 +31,14 @@ header ul {
   gap: 2rem;
   margin: 2rem 0 1rem;
   font-size: 1rem;
-  color:#d1d5db;
   font-weight: bold;
   list-style-type: none;
 }
-header ul li:hover {
+header a{
+  color:#d1d5db;
+  text-decoration: none;
+}
+header ul a:hover {
   color: #3b82f6;
 }
 .avatar-wrapper {
@@ -164,4 +166,78 @@ section h1 {
   figure .time {
     font-size: 1.1rem;   
   }
+} */
+
+
+/* GENERAL */
+.card {
+  background: #0f172a;
+  color: white;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ABOUT PAGE */
+.about-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-page section {
+  margin-bottom: 2rem;
+}
+
+.about-page h2 {
+  color: #38bdf8;
+}
+
+/* CONTACT PAGE */
+.contact-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #0f172a;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.contact-page input,
+.contact-page textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: white;
+}
+
+.contact-page button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-page button:hover {
+  background: #1e40af;
+}
+
+.error-message {
+  color: #f87171;
+  font-size: 0.9rem;
+}
+
+.success-message {
+  color: #4ade80;
+  font-weight: bold;
+  text-align: center;
 }

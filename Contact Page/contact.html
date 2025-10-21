@@ -3,16 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Page</title>
+    <title>Contact Me - Raji Mubarak</title>
+    <link rel="stylesheet" href="/Home Page/style.css" />
   </head>
-  <body>
-    <h1>Hello Welcome to Contact Page</h1>
-    <header>
-      <ul data-testid="test-navlink">
-        <li><a href="/Home Page/index.html">Home</a></li>
-        <li><a href="/About Page/about.html">About</a></li>
-        <li><a href="/Contact Page/contact.html">Contact</a></li>
-      </ul>
-    </header>
+  <body class="contact-page">
+    <main>
+      <h1>Contact Me</h1>
+      <form id="contactForm" novalidate>
+        <div>
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            data-testid="test-contact-name"
+            required
+            aria-describedby="error-name"
+          />
+          <p
+            id="error-name"
+            data-testid="test-contact-error-name"
+            class="error-message"
+            hidden
+          >
+            Full name is required.
+          </p>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            data-testid="test-contact-email"
+            required
+            aria-describedby="error-email"
+          />
+          <p
+            id="error-email"
+            data-testid="test-contact-error-email"
+            class="error-message"
+            hidden
+          >
+            Please enter a valid email address.
+          </p>
+        </div>
+
+        <div>
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            data-testid="test-contact-subject"
+            required
+            aria-describedby="error-subject"
+          />
+          <p
+            id="error-subject"
+            data-testid="test-contact-error-subject"
+            class="error-message"
+            hidden
+          >
+            Subject is required.
+          </p>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            data-testid="test-contact-message"
+            rows="5"
+            required
+            aria-describedby="error-message"
+          ></textarea>
+          <p
+            id="error-message"
+            data-testid="test-contact-error-message"
+            class="error-message"
+            hidden
+          >
+            Message must be at least 10 characters.
+          </p>
+        </div>
+
+        <button type="submit" data-testid="test-contact-submit">
+          Submit
+        </button>
+
+        <p
+          id="success-message"
+          data-testid="test-contact-success"
+          class="success-message"
+          hidden
+        >
+          ✅ Message sent successfully!
+        </p>
+      </form>
+    </main>
+
+    <script src="contact.js"></script>
   </body>
 </html>
