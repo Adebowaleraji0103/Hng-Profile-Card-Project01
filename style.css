@@ -32,9 +32,13 @@ header ul {
   gap: 2rem;
   margin: 2rem 0 1rem;
   font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  list-style-type: none;
+}
+header ul:hover {
   color: #3b82f6;
 }
-
 .avatar-wrapper {
   width: 180px;
   height: 180px;
